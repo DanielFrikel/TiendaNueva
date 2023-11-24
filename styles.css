@@ -1,6 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
-
+    background: #212121;    
 }
 
 /* ============== HERO PERSONALIZADO ============= */
@@ -14,6 +14,7 @@ body {
     color: #fff;
     text-align: center;
     position: relative;
+    overflow: hidden;      
 }
 
 .hero-overlay {
@@ -62,17 +63,18 @@ body {
 
 .contenedorCarrousel {
     margin: 0 auto;
-    width: 60%;
+    width: 70%;
 }
 
 @media (max-width: 1080px) {
     .contenedorCarrousel {
         width: 100%;
+        border-radius: 2rem;        
     }
 }
 
 .carousel-control-next-icon {
-    filter: invert(100%);
+    filter: invert(100%);    
 }
 
 .carousel-control-prev-icon {
@@ -82,14 +84,46 @@ body {
 .imagenesCarousel{
     height: 40rem;
     width: 100%;
-    object-fit:contain;
+    object-fit: cover;   
+    background-position: center; 
+    border-radius: 10px;        
 }
 
+.carousel-inner{
+}
+
+.carousel-item{
+    transition: ease 2s;
+}
+
+.contenedorPromo{
+    margin: 0 auto;
+    width: 100%;
+
+}
+.imagenPromo{
+    height: 60rem;
+    width: 100%;
+}
+
+.subtitulo{
+    color:white;
+    text-align: center;
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.subtitulo2{
+    color:white;
+    text-align: center;
+    font-weight: 600;
+    font-size: 3rem;
+}
 
 /* ============== CONTENEDOR NAVBAR ============= */
 
 .navbar {
-    background-color: #333;
+    background-color: #333;    
   }
 
   .navbar-brand {
@@ -113,3 +147,68 @@ body {
     color: #ccc;
   }
 
+/* ======================== CARDS ============================ */
+   /* Estilos personalizados */
+   .card {
+    border: none;
+    transition: transform 0.3s;
+    background-color: #f6f6f6;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card-img-top {
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .card-body {
+    text-align: center;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .card-text {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 15px;
+  }
+
+  .price {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .btn-add-to-cart {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+
+  .btn-add-to-cart:hover {
+    background-color: #555;
+  }
+
+  .btn-add-to-cart2 {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+
+  .btn-add-to-cart2:hover {
+    background-color: #555;
+  }
